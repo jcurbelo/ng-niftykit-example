@@ -36,6 +36,7 @@ export class AppComponent {
         price: await this.drop.price(),
         maxPerMint: await this.drop.maxPerMint(),
         maxPerWallet: await this.drop.maxPerWallet(),
+        maxAmount: await this.drop.maxAmount(),
         walletTokensCount: await this.drop.walletTokensCount(),
         totalSupply: await this.drop.totalSupply(),
         auctionDuration: await this.drop.auctionDuration(),
@@ -102,6 +103,7 @@ interface Collection {
   price: unknown;
   maxPerMint: number;
   maxPerWallet: number;
+  maxAmount: number;
   walletTokensCount: number;
   totalSupply: number;
   auctionDuration: number;
